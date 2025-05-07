@@ -15,4 +15,4 @@ I'm Liam, a high schooler & teenager interested in Hardware engineering, Homelab
 
 ## Contact
 
-If you'd like to connect with me please see my list of [social links here]()!
+If you'd like to connect with me please see my list of social links!
