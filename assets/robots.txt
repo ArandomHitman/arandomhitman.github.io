@@ -1,4 +1,4 @@
-# credit to techno tim for the original file. I am experimenting with some stuff so ignore this for
+# credit to techno tim for the original file. I am experimenting with some stuff so ignore this for now.
 
 ---
 permalink: /robots.txt
