@@ -37,7 +37,7 @@ order: 4
   }
 </style>
 
-# Recommended Brands
+# Recommended Brands (check them out if you haven't already!)
 
 <a href="https://www.ui.com/" class="brand-button" target="_blank">
   <img src="/assets/img/brand-icons/ubiquiti-logo.png" alt="Ubiquiti Logo">
