@@ -161,7 +161,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "" # Ensure this is empty if the site is hosted at the root
 
 # ------------ The following options are not recommended to be modified ------------------#
 
