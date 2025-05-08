@@ -1,16 +1,18 @@
 ---
 layout: page
 icon: fas fa-thumbs-up
+title: Some brands I can recommend for their value
 order: 4
 ---
-# Here are some brands that I can safely recommend based on my experience
 
-<a href="https://www.ui.com/" class="brand-button" target="_blank">
+<link rel="stylesheet" href="/_tabs/brandbuttons_styles.css">
+
+<div class="brand-button">
   <img src="/assets/img/brand-icons/ubiquiti-logo.png" alt="Ubiquiti Logo">
   <span>Ubiquiti Inc.</span>
-</a>
+</div>
 
-<a href="https://sysracks.com/" class="brand-button" target="_blank">
+<div class="brand-button">
   <img src="/assets/img/brand-icons/sysracks-logo.png" alt="Sysracks Logo">
   <span>Sysracks Inc.</span>
-</a>
+</div>
