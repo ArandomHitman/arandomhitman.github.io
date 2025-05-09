@@ -17,6 +17,7 @@ order: 4
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
     animation: fadeIn 0.5s ease-in-out;
+    cursor: pointer;
   }
 
   .brand-button:hover {
@@ -39,6 +40,10 @@ order: 4
     color: #555;
   }
 
+  .brand-link {
+    display: none;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -51,44 +56,44 @@ order: 4
   }
 </style>
 
-<div class="brand-button">
+<div class="brand-button" onclick="window.location.href='#';">
   <img src="/assets/img/brand-icons/ubiquiti-logo.png" alt="Ubiquiti Logo"> 
   <span>Ubiquiti Inc.</span>
-  <a href="#" class="brand-link">Visit Website</a>
+  <a href="https://www.ui.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button">
+<div class="brand-button" onclick="window.location.href='#';">
   <img src="/assets/img/brand-icons/sysracks-logo.png" alt="Sysracks Logo"> 
   <span>Sysracks Inc.</span>
-  <a href="#" class="brand-link">Visit Website</a>
+  <a href="https://sysracks.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button">
+<div class="brand-button" onclick="window.location.href='#';">
   <img src="/assets/img/brand-icons/cisco-logo.png" alt="Cisco Logo"> 
   <span>Cisco Systems</span>
-  <a href="#" class="brand-link">Visit Website</a>
+  <a href="https://www.cisco.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button">
+<div class="brand-button" onclick="window.location.href='#';">
   <img src="/assets/img/brand-icons/netgear-logo.png" alt="Netgear Logo"> 
   <span>Netgear Inc.</span>
-  <a href="#" class="brand-link">Visit Website</a>
+  <a href="https://www.netgear.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button">
+<div class="brand-button" onclick="window.location.href='#';">
   <img src="/assets/img/brand-icons/mikrotik-logo.png" alt="MikroTik Logo"> 
   <span>MikroTik</span>
-  <a href="#" class="brand-link">Visit Website</a>
+  <a href="https://mikrotik.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button">
+<div class="brand-button" onclick="window.location.href='https://www.ifixit.com/';">
   <img src="/assets/img/brand-icons/ifixit-logo.png" alt="Ifixit Logo"> 
   <span>Ifixit</span>
-  <a href="#" class="brand-link">https://www.ifixit.com/</a>
+  <a href="https://www.ifixit.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button">
+<div class="brand-button" onclick="window.location.href='https://frame.work/';">
   <img src="/assets/img/brand-icons/framework-logo.png" alt="Framework Logo"> 
   <span>Framework</span>
-  <a href="#" class="brand-link">https://frame.work/</a>
+  <a href="https://frame.work/" class="brand-link">Visit Website</a>
 </div>
