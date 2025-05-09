@@ -1,10 +1,9 @@
 ---
 layout: page
 icon: fas fa-thumbs-up
-title: Some brands I can recommend for their value
+title: Recommended Brands
 order: 4
 ---
-
 <link rel="stylesheet" href="/assets/css/brandbuttons_styles.css"> 
 
 <div class="brand-button">
