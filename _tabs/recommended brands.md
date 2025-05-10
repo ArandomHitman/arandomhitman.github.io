@@ -102,34 +102,38 @@ order: 4
   }
 </style>
 
+<button id="theme-toggle" onclick="window.toggleTheme()">Switch Theme</button>
+
 <script>
-  // Ensure the theme is applied based on the user's preference or system setting
-  const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const savedTheme = localStorage.getItem('theme');
-  const theme = savedTheme || (userPrefersDark ? 'dark' : 'light');
-  document.documentElement.setAttribute('data-theme', theme);
+  document.addEventListener('DOMContentLoaded', () => {
+    // Ensure the theme is applied based on the user's preference or system setting
+    const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
+    const theme = savedTheme || (userPrefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
 
-  // Update the toggle button text based on the current theme
-  function updateToggleButtonText() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const toggleButton = document.getElementById('theme-toggle');
-    toggleButton.textContent = currentTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
-  }
+    // Update the toggle button text based on the current theme
+    function updateToggleButtonText() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const toggleButton = document.getElementById('theme-toggle');
+      if (toggleButton) {
+        toggleButton.textContent = currentTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+      }
+    }
 
-  // Function to toggle theme
-  function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+    // Function to toggle theme
+    window.toggleTheme = function () {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateToggleButtonText();
+    };
+
+    // Initialize the toggle button text on page load
     updateToggleButtonText();
-  }
-
-  // Initialize the toggle button text on page load
-  document.addEventListener('DOMContentLoaded', updateToggleButtonText);
+  });
 </script>
-
-<button id="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
 
 <div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/ubiquiti-logo.png' | relative_url }}';">
   <img src="{{ '/assets/img/brand-icons/ubiquiti-logo.png' | relative_url }}" alt="Ubiquiti Logo">
