@@ -21,8 +21,8 @@ order: 4
   }
 
   .brand-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
     background-color: #f0f0f0;
   }
 
@@ -32,12 +32,22 @@ order: 4
     margin-right: 15px;
     border-radius: 50%;
     border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+  }
+
+  .brand-button:hover img {
+    transform: rotate(5deg) scale(1.1);
   }
 
   .brand-button span {
     font-size: 18px;
     font-weight: bold;
     color: #555;
+    transition: color 0.3s ease;
+  }
+
+  .brand-button:hover span {
+    color: #333;
   }
 
   .brand-link {
@@ -54,46 +64,83 @@ order: 4
       transform: translateY(0);
     }
   }
+
+  [data-theme="dark"] .brand-button {
+    background-color: #333;
+    border: 1px solid #555;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+
+  [data-theme="dark"] .brand-button:hover {
+    background-color: #444;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.25);
+  }
+
+  [data-theme="dark"] .brand-button img {
+    border: 1px solid #555;
+  }
+
+  [data-theme="dark"] .brand-button span {
+    color: #f9f9f9;
+  }
 </style>
 
+<script>
+  // Ensure the theme is applied based on the user's preference or system setting
+  const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = localStorage.getItem('theme');
+  const theme = savedTheme || (userPrefersDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
+
+  // Function to toggle theme
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  }
+</script>
+
+<button onclick="toggleTheme()">Toggle Button Theme</button> <!-- due to a temporary issue regarding button switching, this will have to do for now. -->
+
 <div class="brand-button" onclick="window.location.href='#';">
-  <img src="/assets/img/brand-icons/ubiquiti-logo.png" alt="Ubiquiti Logo"> 
+  <img src="/assets/img/brand-icons/ubiquiti-logo.png" alt="Ubiquiti Logo">
   <span>Ubiquiti Inc.</span>
   <a href="https://www.ui.com/" class="brand-link">Visit Website</a>
 </div>
 
 <div class="brand-button" onclick="window.location.href='#';">
-  <img src="/assets/img/brand-icons/sysracks-logo.png" alt="Sysracks Logo"> 
+  <img src="/assets/img/brand-icons/sysracks-logo.png" alt="Sysracks Logo">
   <span>Sysracks Inc.</span>
   <a href="https://sysracks.com/" class="brand-link">Visit Website</a>
 </div>
 
 <div class="brand-button" onclick="window.location.href='#';">
-  <img src="/assets/img/brand-icons/cisco-logo.png" alt="Cisco Logo"> 
+  <img src="/assets/img/brand-icons/cisco-logo.png" alt="Cisco Logo">
   <span>Cisco Systems</span>
   <a href="https://www.cisco.com/" class="brand-link">Visit Website</a>
 </div>
 
 <div class="brand-button" onclick="window.location.href='#';">
-  <img src="/assets/img/brand-icons/netgear-logo.png" alt="Netgear Logo"> 
+  <img src="/assets/img/brand-icons/netgear-logo.png" alt="Netgear Logo">
   <span>Netgear Inc.</span>
   <a href="https://www.netgear.com/" class="brand-link">Visit Website</a>
 </div>
 
 <div class="brand-button" onclick="window.location.href='#';">
-  <img src="/assets/img/brand-icons/mikrotik-logo.png" alt="MikroTik Logo"> 
+  <img src="/assets/img/brand-icons/mikrotik-logo.png" alt="MikroTik Logo">
   <span>MikroTik</span>
   <a href="https://mikrotik.com/" class="brand-link">Visit Website</a>
 </div>
 
 <div class="brand-button" onclick="window.location.href='https://www.ifixit.com/';">
-  <img src="/assets/img/brand-icons/ifixit-logo.png" alt="Ifixit Logo"> 
+  <img src="/assets/img/brand-icons/ifixit-logo.png" alt="Ifixit Logo">
   <span>Ifixit</span>
   <a href="https://www.ifixit.com/" class="brand-link">Visit Website</a>
 </div>
 
 <div class="brand-button" onclick="window.location.href='https://frame.work/';">
-  <img src="/assets/img/brand-icons/framework-logo.png" alt="Framework Logo"> 
+  <img src="/assets/img/brand-icons/framework-logo.png" alt="Framework Logo">
   <span>Framework</span>
   <a href="https://frame.work/" class="brand-link">Visit Website</a>
 </div>

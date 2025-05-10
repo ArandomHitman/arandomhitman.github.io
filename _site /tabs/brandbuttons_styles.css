@@ -1,0 +1,37 @@
+.brand-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px; /* Rounded corners */
+  background-color: #f9f9f9;
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure buttons are rectangular */
+}
+
+.brand-button:hover {
+  background-color: #e6e6e6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.brand-button img {
+  height: 50px; /* Increased height for better visibility */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 15px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.brand-button span {
+  flex-grow: 1;
+  text-align: left;
+}

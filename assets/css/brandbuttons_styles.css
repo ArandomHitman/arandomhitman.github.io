@@ -36,3 +36,21 @@
   flex-grow: 1;
   text-align: left;
 }
+
+@media (prefers-color-scheme: dark) {
+  .brand-button {
+    background-color: #333;
+    color: #f9f9f9;
+    border: 1px solid #555;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+
+  .brand-button:hover {
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+  }
+
+  .brand-button img {
+    background-color: #444;
+  }
+}
