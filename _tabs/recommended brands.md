@@ -131,31 +131,31 @@ order: 4
 
 <button id="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
 
-<div class="brand-button" onclick="window.location.href='#';">
+<div class="brand-button" onclick="window.location.href='https://www.ui.com/';">
   <img src="/assets/img/brand-icons/ubiquiti-logo.png" alt="Ubiquiti Logo">
   <span>Ubiquiti Inc.</span>
   <a href="https://www.ui.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button" onclick="window.location.href='#';">
+<div class="brand-button" onclick="window.location.href='https://sysracks.com/';">
   <img src="/assets/img/brand-icons/sysracks-logo.png" alt="Sysracks Logo">
   <span>Sysracks Inc.</span>
   <a href="https://sysracks.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button" onclick="window.location.href='#';">
+<div class="brand-button" onclick="window.location.href='https://www.cisco.com/';">
   <img src="/assets/img/brand-icons/cisco-logo.png" alt="Cisco Logo">
   <span>Cisco Systems</span>
   <a href="https://www.cisco.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button" onclick="window.location.href='#';">
+<div class="brand-button" onclick="window.location.href='https://www.netgear.com/';">
   <img src="/assets/img/brand-icons/netgear-logo.png" alt="Netgear Logo">
   <span>Netgear Inc.</span>
   <a href="https://www.netgear.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button" onclick="window.location.href='#';">
+<div class="brand-button" onclick="window.location.href='https://mikrotik.com/';">
   <img src="/assets/img/brand-icons/mikrotik-logo.png" alt="MikroTik Logo">
   <span>MikroTik</span>
   <a href="https://mikrotik.com/" class="brand-link">Visit Website</a>
