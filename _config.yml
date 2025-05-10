@@ -161,7 +161,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "/arandomhitman.github.io" # Set this to your repository name if hosted in a subdirectory
+baseurl: "" # Leave empty to use the root directory
 
 # ------------ The following options are not recommended to be modified ------------------#
 
