@@ -37,13 +37,11 @@ order: 5
 
 # 👋 Welcome!
 
-# 👋 Welcome!
-
-I'm Hitman — a teenager interested in hardware engineering, homelabbing, and all things technology. I like hands-on challenges, whether it’s soldering together a custom PCB, doing mods, optimizing a server rack in my homelab, or just screwing around and finding out.
+I'm Hitman — a teenager interested in hardware engineering, homelabbing, and all things technology. I like hands-on challenges, whether it’s soldering together a custom PCB, doing mods, optimizing a server rack in my homelab, or just messing around.
 
 This site is a personal archive for project documentation. It serves as a place to share what I build, break, and reflect. Everything here will be documented fully, links provided, and advice given.
 
-I am also a strong believer in the right to repair movement, open source, renewable tech , and overall encouraging others to own their technology. Whether you’re here to learn something new or just saw this randomly, let me know what you want to see
+I am also a strong believer in the right to repair movement, open source, renewable tech, and overall encouraging others to own their technology. Whether you’re here to learn something new or just saw this randomly, let me know what you want to see
 
 More to come soon!
 

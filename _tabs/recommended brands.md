@@ -131,44 +131,37 @@ order: 4
 
 <button id="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
 
-<div class="brand-button" onclick="window.location.href='https://www.ui.com/';">
-  <img src="/assets/img/brand-icons/ubiquiti-logo.png" alt="Ubiquiti Logo">
+<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/ubiquiti-logo.png' | relative_url }}';">
+  <img src="{{ '/assets/img/brand-icons/ubiquiti-logo.png' | relative_url }}" alt="Ubiquiti Logo">
   <span>Ubiquiti Inc.</span>
-  <a href="https://www.ui.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button" onclick="window.location.href='https://sysracks.com/';">
-  <img src="/assets/img/brand-icons/sysracks-logo.png" alt="Sysracks Logo">
+<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/sysracks-logo.png' | relative_url }}';">
+  <img src="{{ '/assets/img/brand-icons/sysracks-logo.png' | relative_url }}" alt="Sysracks Logo">
   <span>Sysracks Inc.</span>
-  <a href="https://sysracks.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button" onclick="window.location.href='https://www.cisco.com/';">
-  <img src="/assets/img/brand-icons/cisco-logo.png" alt="Cisco Logo">
+<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/cisco-logo.png' | relative_url }}';">
+  <img src="{{ '/assets/img/brand-icons/cisco-logo.png' | relative_url }}" alt="Cisco Logo">
   <span>Cisco Systems</span>
-  <a href="https://www.cisco.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button" onclick="window.location.href='https://www.netgear.com/';">
-  <img src="/assets/img/brand-icons/netgear-logo.png" alt="Netgear Logo">
+<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/netgear-logo.png' | relative_url }}';">
+  <img src="{{ '/assets/img/brand-icons/netgear-logo.png' | relative_url }}" alt="Netgear Logo">
   <span>Netgear Inc.</span>
-  <a href="https://www.netgear.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button" onclick="window.location.href='https://mikrotik.com/';">
-  <img src="/assets/img/brand-icons/mikrotik-logo.png" alt="MikroTik Logo">
+<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/mikrotik-logo.png' | relative_url }}';">
+  <img src="{{ '/assets/img/brand-icons/mikrotik-logo.png' | relative_url }}" alt="MikroTik Logo">
   <span>MikroTik</span>
-  <a href="https://mikrotik.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button" onclick="window.location.href='https://www.ifixit.com/';">
-  <img src="/assets/img/brand-icons/ifixit-logo.png" alt="Ifixit Logo">
+<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/ifixit-logo.png' | relative_url }}';">
+  <img src="{{ '/assets/img/brand-icons/ifixit-logo.png' | relative_url }}" alt="Ifixit Logo">
   <span>Ifixit</span>
-  <a href="https://www.ifixit.com/" class="brand-link">Visit Website</a>
 </div>
 
-<div class="brand-button" onclick="window.location.href='https://frame.work/';">
-  <img src="/assets/img/brand-icons/framework-logo.png" alt="Framework Logo">
+<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/framework-logo.png' | relative_url }}';">
+  <img src="{{ '/assets/img/brand-icons/framework-logo.png' | relative_url }}" alt="Framework Logo">
   <span>Framework</span>
-  <a href="https://frame.work/" class="brand-link">Visit Website</a>
 </div>
