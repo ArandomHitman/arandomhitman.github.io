@@ -83,6 +83,23 @@ order: 4
   [data-theme="dark"] .brand-button span {
     color: #f9f9f9;
   }
+
+  #theme-toggle {
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  [data-theme="dark"] #theme-toggle {
+    background-color: #555;
+    color: #f9f9f9;
+  }
 </style>
 
 <script>
@@ -92,16 +109,27 @@ order: 4
   const theme = savedTheme || (userPrefersDark ? 'dark' : 'light');
   document.documentElement.setAttribute('data-theme', theme);
 
+  // Update the toggle button text based on the current theme
+  function updateToggleButtonText() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.textContent = currentTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+  }
+
   // Function to toggle theme
   function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
+    updateToggleButtonText();
   }
+
+  // Initialize the toggle button text on page load
+  document.addEventListener('DOMContentLoaded', updateToggleButtonText);
 </script>
 
-<button onclick="toggleTheme()">Toggle Button Theme</button> <!-- due to a temporary issue regarding button switching, this will have to do for now. -->
+<button id="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
 
 <div class="brand-button" onclick="window.location.href='#';">
   <img src="/assets/img/brand-icons/ubiquiti-logo.png" alt="Ubiquiti Logo">
