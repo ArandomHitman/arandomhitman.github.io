@@ -135,37 +135,41 @@ order: 4
   });
 </script>
 
-<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/ubiquiti-logo.png' | relative_url }}';">
+<div class="brand-button" onclick="window.location.href='https://www.ui.com';">
   <img src="{{ '/assets/img/brand-icons/ubiquiti-logo.png' | relative_url }}" alt="Ubiquiti Logo">
   <span>Ubiquiti Inc.</span>
 </div>
 
-<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/sysracks-logo.png' | relative_url }}';">
+<div class="brand-button" onclick="window.location.href='https://www.sysracks.com';">
   <img src="{{ '/assets/img/brand-icons/sysracks-logo.png' | relative_url }}" alt="Sysracks Logo">
   <span>Sysracks Inc.</span>
 </div>
 
-<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/cisco-logo.png' | relative_url }}';">
+<div class="brand-button" onclick="window.location.href='https://www.cisco.com';">
   <img src="{{ '/assets/img/brand-icons/cisco-logo.png' | relative_url }}" alt="Cisco Logo">
   <span>Cisco Systems</span>
 </div>
 
-<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/netgear-logo.png' | relative_url }}';">
+<div class="brand-button" onclick="window.location.href='https://www.netgear.com';">
   <img src="{{ '/assets/img/brand-icons/netgear-logo.png' | relative_url }}" alt="Netgear Logo">
   <span>Netgear Inc.</span>
 </div>
 
-<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/mikrotik-logo.png' | relative_url }}';">
+<div class="brand-button" onclick="window.location.href='https://www.tp-link.com';">
+  <img src="{{ '/assets/img/brand-icons/tp-link-logo.png' | relative_url }}" alt="TP-Link Logo">
+  <span>TP-Link Technologies</span>
+
+<div class="brand-button" onclick="window.location.href='https://mikrotik.com';">
   <img src="{{ '/assets/img/brand-icons/mikrotik-logo.png' | relative_url }}" alt="MikroTik Logo">
   <span>MikroTik</span>
 </div>
 
-<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/ifixit-logo.png' | relative_url }}';">
+<div class="brand-button" onclick="window.location.href='https://www.ifixit.com';">
   <img src="{{ '/assets/img/brand-icons/ifixit-logo.png' | relative_url }}" alt="Ifixit Logo">
   <span>Ifixit</span>
 </div>
 
-<div class="brand-button" onclick="window.location.href='{{ '/assets/img/brand-icons/framework-logo.png' | relative_url }}';">
+<div class="brand-button" onclick="window.location.href='https://frame.work';">
   <img src="{{ '/assets/img/brand-icons/framework-logo.png' | relative_url }}" alt="Framework Logo">
   <span>Framework</span>
 </div>
